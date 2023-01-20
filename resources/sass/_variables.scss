@@ -1,0 +1,252 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+
+.iconos-opcion{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+    .icons{
+
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        
+    }
+  
+    .espacios:hover{
+
+        font-size: 20px;
+       transition-duration: 0.6s;
+       color: red;
+
+    }
+    .block-pad {
+        display: flex;
+        justify-content: center;
+        padding: 150px 0 150px 0;
+        background: #ffffff;
+        
+        box-shadow: inset 4px 4px   15px -1px #ff1e00,
+            inset -4px -4px 15px -1px #ff1e00;
+    }
+    
+    /*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+
+ /* .raise{
+
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+          color: #ff2600;
+}
+
+.raise {
+  --color: #ff2600;
+  --hover: #ff2600;
+  
+}
+
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  -webkit-box-pack: center;
+          justify-content: center;
+  align-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}*/
+
+body .btn-bg.bg-2 .btn-2 button {
+    color: #000000;
+    background: #fde9e9;
+    border: none;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  body .btn-bg.bg-2 .btn-2 button:hover {
+    background: transparent;
+    color: #fd1f07;
+  }
+  body .btn-bg.bg-2 .btn-2 button:hover:before,
+  body .btn-bg.bg-2 .btn-2 button:hover:after {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    width: 100%;
+  }
+  body .btn-bg.bg-2 .btn-2 button:before,
+  body .btn-bg.bg-2 .btn-2 button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background: #ff5849;
+    transition: all 0.4s ease;
+  }
+  body .btn-bg.bg-2 .btn-2 button:after {
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .btn {
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: #fff;
+  }
+  button {
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #fff;
+    position: relative;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 1rem 3rem 1rem 3rem;
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-size: 1.5em;
+  }
+  button a {
+    text-decoration: none;
+  }
+  @-moz-keyframes cloud-animation {
+    100% {
+      background-position: 0px 2em;
+    }
+  }
+  @-webkit-keyframes cloud-animation {
+    100% {
+      background-position: 0px 2em;
+    }
+  }
+  @-o-keyframes cloud-animation {
+    100% {
+      background-position: 0px 2em;
+    }
+  }
+  @keyframes cloud-animation {
+    100% {
+      background-position: 0px 2em;
+    }
+  }
+  @-moz-keyframes witch-word-color {
+    0% {
+      color: #d3b7f7;
+    }
+    50% {
+      color: #50514f;
+    }
+    100% {
+      color: #fff;
+    }
+  }
+  @-webkit-keyframes witch-word-color {
+    0% {
+      color: #d3b7f7;
+    }
+    50% {
+      color: #50514f;
+    }
+    100% {
+      color: #fff;
+    }
+  }
+  @-o-keyframes witch-word-color {
+    0% {
+      color: #d3b7f7;
+    }
+    50% {
+      color: #50514f;
+    }
+    100% {
+      color: #fff;
+    }
+  }
+  @keyframes witch-word-color {
+    0% {
+      color: #d3b7f7;
+    }
+    50% {
+      color: #50514f;
+    }
+    100% {
+      color: #fff;
+    }
+  }
